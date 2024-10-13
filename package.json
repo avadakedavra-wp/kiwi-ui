@@ -1,7 +1,7 @@
 {
-  "name": "kiwi-ui",
+  "name": "@kiwi-ui/core",
   "version": "1.0.0",
-  "description": "Kiwi UI Component Library",
+  "description": "KiwiUI - Tailwind CSS Component Library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -21,7 +21,7 @@
     "components",
     "kiwi"
   ],
-  "author": "kiwiwazowski",
+  "author": "kiwi Wazowski",
   "license": "ISC",
   "peerDependencies": {
     "react": "^18.0.0",

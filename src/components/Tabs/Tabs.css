@@ -1,0 +1,85 @@
+/* Tabs.css */
+.kiwi-tabs {
+    --primary: #8BC34A;
+    --secondary: #4CAF50;
+    --text: #333333;
+    --background: #FFFFFF;
+
+    background-color: var(--background);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text);
+}
+
+.kiwi-tab-list {
+    display: flex;
+    background-color: var(--primary);
+    padding: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.kiwi-tab {
+    padding: 12px 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--background);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+}
+
+.kiwi-tab:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.kiwi-tab-active {
+    color: var(--secondary);
+}
+
+.kiwi-tab-active-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--secondary);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.kiwi-tab-panel {
+    padding: 20px;
+    background-color: var(--background);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.kiwi-tab-panel-active {
+    opacity: 1;
+}
+
+@media (max-width: 640px) {
+    .kiwi-tab-list {
+        flex-direction: column;
+    }
+
+    .kiwi-tab {
+        width: 100%;
+        text-align: left;
+    }
+
+    .kiwi-tab-active-indicator {
+        height: 100%;
+        width: 3px;
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+}

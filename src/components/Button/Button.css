@@ -1,0 +1,157 @@
+.kiwi-button {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.kiwi-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(139, 195, 74, 0.5);
+}
+
+.kiwi-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.kiwi-button--small {
+  font-size: 12px;
+  padding: 8px 16px;
+}
+
+.kiwi-button--medium {
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.kiwi-button--large {
+  font-size: 16px;
+  padding: 16px 24px;
+}
+
+/* Variants */
+.kiwi-button--primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.kiwi-button--primary:hover {
+  background-color: #45a049;
+}
+
+.kiwi-button--secondary {
+  background-color: #F1F8E9;
+  color: #33691E;
+  border: 1px solid #33691E;
+}
+
+.kiwi-button--secondary:hover {
+  background-color: #DCEDC8;
+}
+
+.kiwi-button--success {
+  background-color: #8BC34A;
+  color: white;
+}
+
+.kiwi-button--success:hover {
+  background-color: #7CB342;
+}
+
+.kiwi-button--danger {
+  background-color: #F44336;
+  color: white;
+}
+
+.kiwi-button--danger:hover {
+  background-color: #D32F2F;
+}
+
+.kiwi-button--warning {
+  background-color: #FFC107;
+  color: #212121;
+}
+
+.kiwi-button--warning:hover {
+  background-color: #FFA000;
+}
+
+.kiwi-button--kiwi {
+  background-color: #76FF03;
+  color: #33691E;
+}
+
+.kiwi-button--kiwi:hover {
+  background-color: #64DD17;
+}
+
+/* Animations */
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.kiwi-button--spin:hover {
+  animation: spin 1s linear infinite;
+}
+
+.kiwi-button--shake:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.kiwi-button--bounce:hover {
+  animation: bounce 0.5s ease infinite;
+}
+
+/* Full width */
+.kiwi-button--full-width {
+  width: 100%;
+}
+
+/* Icon styles */
+.kiwi-button__icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.kiwi-button__icon--left {
+  margin-right: 8px;
+}
+
+.kiwi-button__icon--right {
+  margin-left: 8px;
+}
+
+/* Loading state */
+.kiwi-button--loading {
+  color: transparent !important;
+}
+
+.kiwi-button__loader {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top: 2px solid transparent;
+  animation: spin 1s linear infinite;
+}

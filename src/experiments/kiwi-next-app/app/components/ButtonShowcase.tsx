@@ -9,19 +9,11 @@ import {
     Button
 } from '../../../../components';
 import { FiArrowRight } from "react-icons/fi";
- 
+
 interface ButtonVariant {
     label: string;
     variant: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'kiwi';
 }
-
-// Kiwi-inspired theme
-const kiwiTheme = {
-    primary: '#8BC34A',    // Light green
-    secondary: '#4CAF50',  // Medium green
-    text: '#33691E',       // Dark green
-    background: '#F1F8E9', // Very light green
-};
 
 const ButtonShowcase: React.FC = () => {
     const [activeSize, setActiveSize] = useState<'small' | 'medium' | 'large'>('medium');

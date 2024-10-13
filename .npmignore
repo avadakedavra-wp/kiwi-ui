@@ -1,0 +1,73 @@
+# Source files
+src/
+
+# Config files
+.babelrc
+.eslintrc
+.prettierrc
+tsconfig.json
+rollup.config.js
+jest.config.js
+
+# Build tools
+webpack.config.js
+gulpfile.js
+
+# Test files
+__tests__/
+*.test.js
+*.spec.js
+
+# Development folders
+docs/
+examples/
+.storybook/
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Version control
+.git/
+.gitignore
+
+# CI
+.travis.yml
+.circleci/
+
+# Miscellaneous
+node_modules/
+coverage/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js specific
+.next/
+out/
+
+# Experiment folders
+experiments/
+
+# Keep dist folder (override .gitignore if it's ignoring dist)
+!dist/
+
+src/experiments
+experiments/
+src/experiments/
